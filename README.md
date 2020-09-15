@@ -1,13 +1,13 @@
 # Predicate_Learning
 
 ## Installation
-install your local pomdp solver
+1. install your local pomdp solver
 
-download dataset at https://www.eecs.tufts.edu/~gtatiya/pages/2014/CY101Dataset.html
+2. download dataset at https://www.eecs.tufts.edu/~gtatiya/pages/2014/CY101Dataset.html
 
-remove no_object from sensorimotor feature files
+3. remove no_object from sensorimotor feature files
 
-create data directory
+4. create data directory
 
 ```
 mkdir data/cy101/normalized_data_without_noobject
