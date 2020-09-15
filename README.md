@@ -7,7 +7,7 @@
 
 3. remove no_object from sensorimotor feature files
 
-4. create data directory
+4. create a dataset directory and copy all feature files into it
 
 ```
 mkdir data/cy101/normalized_data_without_noobject
