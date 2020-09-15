@@ -38,6 +38,7 @@ def main(argv):
     #test
     test_success = []
 
+    applPath1 = 'your POMDP solver path' 
 
     print("\n****** Simulation parameters: ******\n")
 
@@ -341,7 +342,6 @@ def main(argv):
 
                                 if planner == 'pomdp':
                                     policy_name = '../runtime/policy/' + s + '_' + str(request_preds) + '.policy'
-                                    applPath1 = '/Users/xiaohan/software/appl/src/pomdpsol' 
                                     pathlist=[applPath1]
                                     appl=None
                                     for ip in pathlist:
@@ -476,7 +476,6 @@ def main(argv):
                             
                             if planner == 'pomdp':
                                 policy_name = '../runtime/policy/' + s + '_' + str(request_preds) + '.policy'
-                                applPath1 = '/Users/xiaohan/software/appl/src/pomdpsol' 
                                 pathlist=[applPath1]
                                 appl=None
                                 for p in pathlist:
