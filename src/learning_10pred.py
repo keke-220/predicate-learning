@@ -38,7 +38,7 @@ def main(argv):
     #test
     test_success = []
 
-    applPath1 = 'your POMDP solver path' 
+    applPath1 = 'YOUR_POMDP_SOL_PATH' 
 
     print("\n****** Simulation parameters: ******\n")
 
