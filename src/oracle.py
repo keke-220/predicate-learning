@@ -12,7 +12,7 @@ import pickle
 
 class TFTableCY101:
     def __init__(self,min_num_examples_per_class):
-        table_path = "../../data/cy101/cy101_labels.csv"
+        table_path = "../data/cy101/cy101_labels.csv"
         self.behaviors = ["look","grasp","lift_slow","hold","shake","low_drop","tap","push","poke","crush"]
         self.modalities = ['surf', 'color', 'flow', 'audio', 'vibro', 'fingers', 'haptics']
         #self.df = pd.read_csv(table_path,index_col=0)

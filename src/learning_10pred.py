@@ -38,8 +38,8 @@ def main(argv):
     #test
     test_success = []
 
-    applPath1 = 'YOUR_POMDP_SOL_PATH' 
-
+    applPath1 = argv[1]
+    print ("pomdp solver path: " + str(applPath1))
     print("\n****** Simulation parameters: ******\n")
 
     min_num_examples_per_class = 3
@@ -52,7 +52,7 @@ def main(argv):
     all_words = T_oracle.getWords()
     
    
-    datapath = '../../data/cy101/normalized_data_without_noobject/'
+    datapath = '../data/cy101/normalized_data_without_noobject/'
   
     #set up pretraining set, training set and test set
     random.shuffle(objects)
@@ -131,8 +131,8 @@ def main(argv):
     print("o_test =  " + str(general_test) + '\n')
 
     print_objects_details(T_oracle, general_test, predicates)
-    
-    strategy = ['random_plus', 'passive_learning', 'IT_learning']
+    strategy = ['passive_learning', 'IT_learning']    
+    #strategy = ['random_plus', 'passive_learning', 'IT_learning']
     for s in strategy:
         dir_path = "../runtime/classifiers/" + s
         if os.path.exists(dir_path) == False:

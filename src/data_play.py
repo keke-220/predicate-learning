@@ -18,7 +18,7 @@ class DataPlay:
         self.actions = T_oracle.getBehaviors()
         self.feature_count_dict = {}
         #the original dataset path
-        self.ori_path = "../../data/cy101/normalized_data_without_noobject/"
+        self.ori_path = "../data/cy101/normalized_data_without_noobject/"
         for c in self.contexts:
             ori_f = open(self.ori_path + c + ".txt", "r")
             for line in ori_f:
