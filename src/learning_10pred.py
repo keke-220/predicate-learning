@@ -140,10 +140,10 @@ def main(argv):
             os.mkdir(dir_path)
     
     #batch number: retrain after a batch
-    num_batch = 2
+    num_batch = 10
     
     #trial number(batch size)
-    num_trials = 5
+    num_trials = 40
     
     train_times = 1
     
@@ -279,13 +279,6 @@ def main(argv):
 
                     # Testing Phase
                     
-                    #partially tested
-                    '''
-                    if batch_idx == 7:
-                        num_test_trial = 100
-                    else:
-                        num_test_trial = 0
-                    '''
                     max_cost = 50
                     
                     success_trials = {}
