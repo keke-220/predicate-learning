@@ -1,4 +1,4 @@
-# Predicate_Learning
+# predicate-learning
 
 ## Installation
 1. install your local pomdp solver
